@@ -1,0 +1,10 @@
+{
+    "name": "alan/zend_model",
+    "authors": [
+        {
+            "name": "刘满江",
+            "email": "lmj@btctrade.com"
+        }
+    ],
+    "require": {}
+}
