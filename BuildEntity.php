@@ -20,7 +20,7 @@ if ($isEnabledYafNameSpace == 0) {
 }
 
 $dbConfig = $config->toArray()['database'];
-$adapter = \GasShaker\ZendModel\AdapterFactory::create($dbConfig['master'])->getAdapter();
+$adapter = GasShaker\ZendModel\AdapterFactory::create($dbConfig['master'])->getAdapter();
 $classEntityFilePath = '../../../application/models/Entity';
 
 foreach ($tables as $table) {
@@ -32,7 +32,7 @@ foreach ($tables as $table) {
         continue;
     }
 
-    $stringTmp = ucfirst(\GasShaker\ZendModel\Tool::underline2Camel($table));
+    $stringTmp = ucfirst(GasShaker\ZendModel\Tool::underline2Camel($table));
     $classFileName = $stringTmp . 'Entity.php';
     $className = $stringTmp . 'EntityModel';
     if ($isEnabledYafNameSpace == 0) {
@@ -49,7 +49,7 @@ foreach ($tables as $table) {
     }
     file_put_contents(
         "{$classEntityFilePath}/$classFileName",
-        "\nuse \GasShaker\ZendModel\AbstractEntity;\n\n",
+        "\nuse GasShaker\ZendModel\AbstractEntity;\n\n",
         FILE_APPEND
     );
     $string = "/**\n";
@@ -91,7 +91,7 @@ foreach ($tables as $table) {
         $string .= "     * @Column({name={$column['Field']},type=\"{$varType}\",required={$varRequired}{$lengthStr}})\n";
         $string .= "     * @var {$varType}\n";
         $string .= "     */\n";
-        $varName = \GasShaker\ZendModel\Tool::underline2Camel($column['Field']);
+        $varName = GasShaker\ZendModel\Tool::underline2Camel($column['Field']);
         $string .= "    protected \${$varName};\n\n";
         file_put_contents("{$classEntityFilePath}/$classFileName", $string, FILE_APPEND);
 
