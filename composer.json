@@ -1,9 +1,10 @@
 {
-    "name": "Alan-333333/zend_model",
+    "name": "alan/zend_model",
+    "description": "zendmodel",
     "authors": [
         {
-            "name": "liumanjiang",
-            "email": "liumanjiang@baidu.com"
+            "name": "刘满江",
+            "email": "lmj@btctrade.com"
         }
     ],
     "require": {}
