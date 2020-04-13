@@ -1,5 +1,5 @@
 <?php
-namespace Btctrade\ZendModel;
+namespace GasShaker\ZendModel;
 
 use Zend\Db\Adapter\Adapter;
 
@@ -23,7 +23,7 @@ final class AdapterFactory
      * Method  create
      * @desc  ......
      *
-     * @author  huangql <hql@btctrade.com>
+     * @author  huangql <hql@GasShaker.com>
      * @static
      * @param array $driveConf
      *

@@ -1,6 +1,6 @@
 <?php
 
-namespace Btctrade\ZendModel;
+namespace GasShaker\ZendModel;
 
 abstract class AbstractEntity
 {
@@ -9,7 +9,7 @@ abstract class AbstractEntity
      * Method  __set
      * @desc  ......
      *
-     * @author  huangql <hql@btctrade.com>
+     * @author  huangql <hql@GasShaker.com>
      * @param $name
      * @param $value
      *
@@ -36,7 +36,7 @@ abstract class AbstractEntity
      * Method  __get
      * @desc  ......
      *
-     * @author  huangql <hql@btctrade.com>
+     * @author  huangql <hql@GasShaker.com>
      * @param $name
      *
      * @return  mixed
@@ -57,7 +57,7 @@ abstract class AbstractEntity
      * Method  toArray
      * @desc  get the entity properties
      *
-     * @author  huangql <hql@btctrade.com>
+     * @author  huangql <hql@GasShaker.com>
      *
      * @return  array
      */
@@ -70,7 +70,7 @@ abstract class AbstractEntity
      * Method  toDBArray
      * @desc  将类属性转成数据表字段【下划线类型】
      *
-     * @author  huangql <hql@btctrade.com>
+     * @author  huangql <hql@GasShaker.com>
      *
      * @return  array
      */
@@ -88,7 +88,7 @@ abstract class AbstractEntity
      * Method  reset
      * @desc  reset the entity properties
      *
-     * @author  huangql <hql@btctrade.com>
+     * @author  huangql <hql@GasShaker.com>
      *
      * @return  void
      */

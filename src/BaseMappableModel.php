@@ -1,5 +1,5 @@
 <?php
-namespace Btctrade\ZendModel;
+namespace GasShaker\ZendModel;
 
 use Zend\Db\Adapter\Adapter;
 use Zend\Db\Sql\Select;

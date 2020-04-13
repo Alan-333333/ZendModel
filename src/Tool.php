@@ -1,6 +1,6 @@
 <?php
 
-namespace Btctrade\ZendModel;
+namespace GasShaker\ZendModel;
 
 /**
  * @Author: WenJun
@@ -15,7 +15,7 @@ class Tool
      * Method  underline2Camel
      * @desc  下划线转驼峰命名方式
      *
-     * @author  huangql <hql@btctrade.com>
+     * @author  huangql <hql@GasShaker.com>
      * @static
      * @param $string
      * @param string $separator
@@ -32,7 +32,7 @@ class Tool
      * Method  camel2Underline
      * @desc  ......
      *
-     * @author  huangql <hql@btctrade.com>
+     * @author  huangql <hql@GasShaker.com>
      * @param $string
      * @param string $separator
      *
